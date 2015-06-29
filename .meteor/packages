@@ -16,3 +16,4 @@ twbs:bootstrap
 pfafman:font-awesome-4
 accounts-password
 accounts-ui
+momentjs:moment

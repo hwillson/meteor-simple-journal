@@ -1,6 +1,9 @@
 <template name="journalEntry">
   <div class="je">
-    <h2>{{title}}</h2>
+    <h2>
+      <i class="fa fa-angle-double-right"></i> {{title}}
+    </h2>
+    <p class="meta">(Created: {{createdDate}})</p>
     <div>{{body}}</div>
   </div>
 </template>
