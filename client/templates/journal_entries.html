@@ -1,0 +1,14 @@
+<template name="journalEntries">
+  <h1>Ramblings ...</h1>
+  {{#if isReady 'journalEntries'}}
+    {{#if entriesExist}}
+      {{#each entries}}
+        {{> journalEntry}}
+      {{/each}}
+    {{else}}
+      <p>No entries.</p>
+    {{/if}}
+  {{else}}
+    <p>Loading ...</p>
+  {{/if}}
+</template>
