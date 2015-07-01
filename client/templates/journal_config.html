@@ -1,6 +1,7 @@
 <template name="journalConfig">
   <div class="jc">
-    {{#autoForm collection=collection id="journal-entry-form" type="insert"}}
+    {{#autoForm collection=collection id="journal-entry-form" type=formType
+        doc=selectedEntry}}
       {{> afQuickField name="title"}}
       {{> afQuickField name="body"}}
       <button type="submit" class="btn btn-primary">Save</button>
