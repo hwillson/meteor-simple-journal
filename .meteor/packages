@@ -12,10 +12,10 @@ meteorhacks:flow-layout
 aldeed:simple-schema
 zimme:collection-timestampable
 aldeed:collection2
-twbs:bootstrap
 pfafman:font-awesome-4
 accounts-password
 accounts-ui
 momentjs:moment
 markdown
 reactive-dict
+skeleton:skeleton
