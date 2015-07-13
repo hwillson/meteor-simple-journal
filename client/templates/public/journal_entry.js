@@ -8,6 +8,7 @@ Template.publicJournalEntry.helpers({
 
 Template.publicJournalEntry.events({
 
+  /*
   'click .je-remove-btn': function () {
     if (window.confirm('Really?')) {
       Jrnl.collections.JournalEntries.remove({ _id: this._id });
@@ -21,5 +22,6 @@ Template.publicJournalEntry.events({
       $jc.show();
     }
   }
+  */
 
 });

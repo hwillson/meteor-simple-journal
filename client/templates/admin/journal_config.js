@@ -1,7 +1,3 @@
-Template.adminJournalConfig.onRendered(function () {
-  $('.jc').hide();
-});
-
 Template.adminJournalConfig.helpers({
 
   collection: function () {
@@ -22,6 +18,21 @@ Template.adminJournalConfig.helpers({
       formType = 'update';
     }
     return formType;
+  },
+
+  previewContent: function () {
+    if (Jrnl.session.get('previewContent')) {
+      return Jrnl.session.get('previewContent');
+    }
+  }
+
+});
+
+Template.adminJournalConfig.events({
+
+  'keyup textarea': function (e) {
+    var content = $(e.currentTarget).val();
+    Jrnl.session.set('previewContent', content);
   }
 
 })

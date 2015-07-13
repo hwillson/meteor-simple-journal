@@ -1,10 +1,12 @@
 <template name="publicJournalEntry">
-  <div class="je">
+  <div class="je row">
     <h1>{{title}}</h1>
     <p class="meta">
       {{createdDate}}
+      <!--
       <a href="#" class="je-remove"><i class="fa fa-trash"></i></a>
       <a href="#" class="je-edit"><i class="fa fa-edit"></i></a>
+      -->
     </p>
     <div>
       {{#markdown}}{{body}}{{/markdown}}
