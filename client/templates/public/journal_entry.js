@@ -1,4 +1,4 @@
-Template.journalEntry.helpers({
+Template.publicJournalEntry.helpers({
 
   createdDate: function () {
     return moment(this.createdAt).format('YYYY-MM-DD hh:mm:ss A');
@@ -6,7 +6,7 @@ Template.journalEntry.helpers({
 
 });
 
-Template.journalEntry.events({
+Template.publicJournalEntry.events({
 
   'click .je-remove-btn': function () {
     if (window.confirm('Really?')) {

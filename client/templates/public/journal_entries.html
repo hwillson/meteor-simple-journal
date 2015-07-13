@@ -1,9 +1,9 @@
-<template name="journalEntries">
+<template name="publicJournalEntries">
   <div class="jes">
-    {{#if isReady 'journalEntries'}}
+    {{#if Template.subscriptionsReady}}
       {{#if entriesExist}}
         {{#each entries}}
-          {{> journalEntry}}
+          {{> publicJournalEntry}}
         {{/each}}
       {{else}}
         <p>No entries.</p>

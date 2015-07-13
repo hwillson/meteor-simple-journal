@@ -1,8 +1,8 @@
-Template.journalConfig.onRendered(function () {
+Template.adminJournalConfig.onRendered(function () {
   $('.jc').hide();
 });
 
-Template.journalConfig.helpers({
+Template.adminJournalConfig.helpers({
 
   collection: function () {
     return Jrnl.collections.JournalEntries;

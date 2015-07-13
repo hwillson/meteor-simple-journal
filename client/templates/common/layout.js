@@ -1,4 +1,4 @@
-Template.layout.events({
+Template.commonLayout.events({
 
   'click a.config': function () {
     var $jc = $('.jc');
