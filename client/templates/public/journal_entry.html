@@ -2,11 +2,13 @@
   <div class="je row">
     <h1>{{title}}</h1>
     <p class="meta">
-      {{createdDate}}
-      <!--
-      <a href="#" class="je-remove"><i class="fa fa-trash"></i></a>
-      <a href="#" class="je-edit"><i class="fa fa-edit"></i></a>
-      -->
+      <span class="date">{{createdDate}}</span>
+      {{#if currentUser}}
+        <span class="admin-buttons u-hide">
+          <a href="#" class="je-remove"><i class="fa fa-trash"></i></a>
+          <a href="#" class="je-edit"><i class="fa fa-edit"></i></a>
+        </span>
+      {{/if}}
     </p>
     <div>
       {{#markdown}}{{body}}{{/markdown}}

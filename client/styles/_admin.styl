@@ -1,9 +1,19 @@
 .jc
   form
+    input
+      margin-bottom 5px
     textarea
       height 500px
+      margin-bottom 0
+    .has-error
+      field-error()
+      textarea
+        border-color $colorRed
+    .form-group
+      margin-bottom 10px
   .preview
-    border 1px solid #E1E1E1
+    border 1px solid $colorBorder
     border-radius 4px
     height 600px
     margin-top 5px
+    padding 10px

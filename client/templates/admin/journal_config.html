@@ -1,15 +1,17 @@
 <template name="adminJournalConfig">
   <div class="jc row">
     <div class="six columns">
-      {{#autoForm collection=collection id="journal-entry-form" type=formType
+      {{#autoForm collection=collection id="journalEntryForm" type=formType
           doc=selectedEntry}}
         {{> afQuickField name="title" class="u-full-width"}}
         {{> afQuickField name="body" class="u-full-width"}}
-        <button type="submit" class="btn btn-primary">Save</button>
+        <button type="submit" class="button-primary">Publish</button>
+        <a href="/" class="button">Done</a>
       {{/autoForm}}
     </div>
     <div class="six columns">
       <div class="preview">
+        <h1>{{previewTitle}}</h1>
         {{#markdown}}{{previewContent}}{{/markdown}}
       </div>
     </div>
