@@ -1,0 +1,22 @@
+{
+  "servers": [
+    {
+      "host": "blog.octonary.com",
+      "username": "hwillson",
+      "pem": "~/.ssh/id_rsa",
+      "env": {}
+    }
+  ],
+  "setupMongo": true,
+  "appName": "blog",
+  "app": "/Users/hwillson/Documents/git/meteor-simple-journal",
+  "env": {
+    "ROOT_URL": "http://blog.octonary.com",
+    "PORT": 80,
+    //"PORT": 3000,
+    //"MONGO_URL": "mongodb://blog:NqN-3JC-YD5-5Nt@127.0.0.1:27017/blog",
+    "METEOR_ENV": "production"
+  },
+  "deployCheckWaitTime": 15,
+  "enableUploadProgressBar": true
+}
